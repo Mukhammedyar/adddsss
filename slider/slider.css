@@ -1,0 +1,236 @@
+*{
+				margin: 0;
+				text-decoration: none;
+				color: #FFD799;
+				padding: 0;
+				box-sizing: border-box;
+}
+body{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				background: #000;
+}
+.body{
+				width: 95%;
+				height: 400px;
+				position: relative;
+				background: linear-gradient(to left,#3B3B3B, #252525);
+			 padding: 0 10px;
+			 padding-top: 25px;
+			 
+			 border-radius: 15px;
+			 
+			 animation: body 2s ;
+}
+
+.elem{
+				width: 140px;
+				height: 140px;
+				
+				margin: 15px;
+				
+				background: #fff;
+				
+				border-radius: 20px;
+				border: 3px solid #fff;
+				
+				display: inline-table;
+				position: relative;
+			 overflow: hidden;
+			 
+			 box-shadow: 0 10px 20px #212121;
+}
+
+
+.title{
+				width: 95%;
+				height: 220px;
+				display: flex;
+				flex-direction: column;
+				padding: 20px 20px;
+				border-radius: 0 0 15px 15px;
+				
+				margin: 0px 15px 45px 15px;
+				
+				background: linear-gradient(to right,#3B3B3B -20%, #202020 100%);
+				
+				animation: title 2s;
+}
+.title h5{
+				padding: 5px 10px; 
+				color: #FFD799;
+				font-weight: 400;
+				font-size: .7rem;
+}
+h2{
+				font-size: 1.5rem;
+				font-weight: 500;
+				padding-bottom: 20px;
+}
+p{
+				width: 200px;
+				font-size: .8rem;
+}
+
+.active{
+				animation: text 2s;
+}
+.active:nth-child(1){
+				animation: text1 2s ;
+}
+.active:nth-child(2){
+				animation: text2 1.5s ;
+}
+.active:nth-child(3){
+				animation: text3 2s ;
+}
+
+@keyframes text1 {
+				0%{
+								opacity: 0;
+								transform: translateY(10px);
+				}
+				100%{
+								opacity: 1;
+								transform: translateY(0);
+				}
+}
+@keyframes text2 {
+				0%{
+								opacity: 0;
+								transform: translateY(20px);
+				}
+				100%{
+								opacity: 1;
+								transform: translateY(0);
+				}
+}
+@keyframes text3 {
+				0%{
+								opacity: 0;
+								transform: translateY(30px);
+				}
+				100%{
+								opacity: 1;
+								transform: translateY(0);
+				}
+}
+
+@keyframes title {
+			from{
+					opacity: 0;		
+			}	
+}
+
+@keyframes body {
+				0%{
+								opacity: 0;
+								transform: scale(60%,60%);
+				}
+				30%{
+								opacity: 0;
+								transform: scale(60%,60%);
+				}70%{
+								opacity: 1;
+								transform: scale(105%,105%);
+				}
+				100%{
+								opacity: 1;
+								transform: scale(100%,100%);
+				
+				}
+}
+
+
+
+
+.watch{
+				background-image: url('Pictures/Watch.jpg');
+				background-size: cover;
+				background-size: 130%;
+				background-position: center;
+				height: 100%;
+				filter: brightness(70%);
+				
+				overflow: hidden;
+				
+				position: relative;
+}
+.heart{
+				background-image: url('Pictures/Heart.jpg');
+				background-size: cover;
+				background-size: 130%;
+				background-position: center;
+				height: 100%;
+				filter: brightness(80%);
+				
+				overflow: hidden;
+				
+				position: relative;
+}
+.neon{
+				background-image: url('Pictures/Neon.jpg');
+				background-size: cover;
+				background-size: 130%;
+				background-position: center;
+				
+				height: 100%;
+				filter: brightness(100%);
+				
+				overflow: hidden;
+				
+				position: relative;
+}
+.player{
+				background-image: url('Pictures/Player.jpg');
+				background-size: cover;
+				background-size: 130%;
+				background-position: center;
+				
+				height: 100%;
+				filter: brightness(80%);
+				
+				overflow: hidden;
+				
+				position: relative;
+				z-index: 0;
+}
+
+
+.elem span{
+				width: 200px;
+				height: 200px;
+				background: rgba(0,0,0,.3);
+				
+				backdrop-filter: blur(7px);
+				
+				position: absolute;
+				bottom: 16%;
+				left: -22%;
+				
+				border-radius: 50%;
+				animation: span 5s infinite;
+}
+.elem:nth-child(3) span{
+						background: rgba(255,255,255,.1);
+}
+
+.elem h5{
+				position: absolute;
+				font-size: 2rem;
+				text-align: center;
+				
+				bottom: 30%;
+				left: 50%;
+				
+				transform: translate(-50%,-50%);
+				opacity: 1;
+				
+				color: #fff;
+				
+				z-index: 5;
+}
+

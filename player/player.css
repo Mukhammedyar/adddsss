@@ -1,0 +1,140 @@
+*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+}
+body{
+				width: 100%;
+				height: 100vh;
+   
+}
+.top{
+	  width:100%;
+   height: 70px; 
+}
+.playlist{
+				width: 60px;
+				height: 40px;
+				border-radius: 50%;
+				position: relative;
+}
+.playlist i{
+   top: 10px;
+				position: absolute;
+				border-radius: 50%;
+			 padding: 15px;
+}
+
+
+.top i{
+				font-size: 1.8rem;
+				
+				color: #fff;
+}
+
+.header{
+				width: 100%;
+				height: 100%;
+				padding: 0 40px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+}
+.img{
+				width: 300px;
+				height: 300px;
+				overflow: hidden;
+				box-shadow: 0 17px 50px -7px rgba(0,0,0,.7);		
+				position: relative;		
+				transition: all 3s linear;
+}
+img{
+				object-fit: cover;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				transition: all 3s linear;
+}
+h4{
+				padding: 0;
+   transform: translateX(-80%);		
+}
+
+.author{
+				font-size: 1rem;
+				padding: 0;
+				transform: translateX(-115px);
+}
+.player-button{
+					padding-top: 30px;
+}
+
+.btnr i{
+				font-size: 50px;
+				color: #000;
+			 margin: auto;
+			 padding: 20px 16px;
+}
+
+.btnr{
+				background: none;
+				width: 80px;
+				height: 80px;
+				border: none;
+				margin: 0 5px;
+}
+.btnr:first-child{
+				width: 60px;
+				height: 60px;
+}
+.btnr:last-child{
+				width: 60px;
+				height: 60px;
+}
+.btnr:last-child > i{
+				padding: 13px 10px;
+				font-size: 40px;
+}
+.btnr:first-child > i{
+				padding: 13px 10px;
+				font-size: 40px;
+}
+.seek-Slider{
+				width: 0;
+				height: 5px;
+				background: #b1b1b1;
+				z-index: 10;
+				position: relative;
+				border-radius: 10px;
+}
+.seek-Slider::before{
+				content: "";
+				width: 12px;
+				height: 12px;
+				background: #aab5ff;
+				position: absolute;
+				right: -6px;
+				border-radius: 50%;
+				top: -60%;
+}
+
+.seek{
+				width: 200px;
+				margin: auto;
+				height: 5px;
+				background: #464646;
+				border: none;
+				border-radius: 5px;
+				margin-bottom: 10px;
+}
+.time-Seek{
+				width: 100%;
+				display: flex;
+				color: #fff;
+}
+
+
+
+
+
+

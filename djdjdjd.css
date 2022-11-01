@@ -1,0 +1,76 @@
+		 body{
+			 				background:rgb(255,255,255);
+			 				width:100%;
+			 				height:100vh;
+			 				display:flex;
+			 				align-items: center;
+			 				justify-content:center;
+			 }
+				.btn{
+				  padding: 15px 40px;
+							text-decoration: none;
+							background: #2b96ff;
+							border-radius: 25px;
+							position: relative;
+							border: none;
+							color: #fff;
+							overflow: hidden;
+							font-size: 1.3rem;
+							font-weight: 500;
+							box-shadow: 0 0 15px 0px #2b96ff;
+				}
+				.active{
+				   position: absolute;
+								animation: shadow .5s;
+								
+				}
+				@keyframes shadow {
+								0%{
+												box-shadow: 0 0 15px 0px #2b96ff;
+								}
+								100%{
+												box-shadow: 0 0 60px 5px #80acff,0 0 10px 0px #2b96ff
+							;
+								}
+				}
+				
+				
+				
+				span{
+								position: absolute;
+								transform: translate(-50%,-50%);
+								width: 200px;
+								height: 200px;
+								border-radius: 50%;
+								background: rgb(255,255,255);
+								animation:click 1s infinite;
+								pointer-events: none;
+				}
+				@keyframes click {
+								0%{
+												width: 0;
+												height: 0;
+												opacity: .5;
+								}
+								100%{
+												width: 300px;
+												height: 300px;
+												opacity: 0;
+								}
+				}
+				
+				.timer{
+								position: absolute;
+								width: 120px;
+								height: 50px;
+								padding: 0 10px;
+								font-size: 1.2rem;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								text-align: center;
+								background:#1b0056;
+								color: #fff;
+								top: 20px;
+								left: 10px;
+				}
